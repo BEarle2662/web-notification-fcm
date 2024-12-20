@@ -57,8 +57,78 @@ function App() {
   return (
     <div className="p-4 min-h-screen flex flex-col justify-evenly bg-gradient-to-b from-[#200122]  to-[#6f0000]">
       {/* s */}
-      {name == "s" && (
-        <div className="App flex justify-center">
+      <div className="grid grid-cols-6 gap-2">
+        {name == "s" && (
+          <div className="col-span-1">
+            <div className="  w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
+              <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
+                <div className="col-span-4 row-span-1 rounded-ss-xl border border-white ">
+                  <img
+                    src="/assets/s1.jpeg"
+                    className="object-cover object-center  rounded-ss-xl  h-full w-full"
+                  />
+                </div>
+                <div className="col-span-4 row-span-1  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 rounded-e-lg border border-white"></div>
+
+                <div className="col-span-4 row-span-1 border border-white "></div>
+                <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 invisible border border-white"></div>
+
+                <div className="col-span-4 row-span-1 rounded-es-xl border border-white "></div>
+                <div className="col-span-4 row-span-1  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
+                <div className="col-span-4 row-span-1 invisible border border-white"></div>
+
+                <div className="col-span-4 row-span-1 invisible border border-white"></div>
+
+                <div className="col-span-4 row-span-1 border border-white "></div>
+                <div className="col-span-4 row-span-1  border rounded-s-lg border-white"></div>
+
+                <div className="col-span-4 row-span-1 border border-white"></div>
+                <div className="col-span-4 row-span-1 border rounded-ee-xl border-white"></div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {name == "sa" && (
+          <div className="flex justify-center mt-5">
+            <div className="  w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
+              <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
+                <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
+                <div className="col-span-4 row-span-1  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
+
+                <div className="col-span-4 row-span-1 border border-white "></div>
+                <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+
+                <div className="col-span-4 row-span-1  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 border border-white "></div>
+                <div className="col-span-4 row-span-1  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 border border-white"></div>
+                <div className="col-span-4 row-span-1  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 border border-white "></div>
+                <div className="col-span-4 row-span-1 rounded-b-xl  border border-white"></div>
+
+                <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                <div className="col-span-4 row-span-1 rounded-b-xl border border-white"></div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+      {/* {name == "s" && (
+        <div className="Ap">
           <div className="  w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
             <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
               <div className="col-span-4 row-span-1 rounded-ss-xl border border-white ">
@@ -92,10 +162,10 @@ function App() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* a */}
-      {name == "sa" && (
+      {/* {name == "sa" && (
         <div className="flex justify-center mt-5">
           <div className="  w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
             <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
@@ -125,7 +195,7 @@ function App() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* t */}
       {name == "sat" && (
@@ -269,6 +339,8 @@ function App() {
         className=" p-2  w-full rounded-full"
         placeholder="Enter Satish"
       />
+
+      {/* <button>Click Me</button> */}
     </div>
   );
 }
