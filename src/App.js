@@ -97,7 +97,7 @@ function App() {
       {/* a */}
       {name == "sa" && (
         <div className="flex justify-center mt-5">
-          <div className="  w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
+          <div className="  w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
             <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
               <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
               <div className="col-span-4 row-span-1  border border-white"></div>
@@ -130,7 +130,7 @@ function App() {
       {/* t */}
       {name == "sat" && (
         <div className="flex justify-center mt-5">
-          <div className="w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
+          <div className="w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
             <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
               <div className="col-span-4 row-span-1 border rounded-s-xl border-white "></div>
               <div className="col-span-4 row-span-1  border border-white"></div>
@@ -163,7 +163,7 @@ function App() {
       {/* i */}
       {name == "sati" && (
         <div className="flex justify-center mt-5">
-          <div className=" w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
+          <div className=" w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
             <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
               <div className="col-span-4 row-span-1 rounded-s-xl border border-white "></div>
               <div className="col-span-4 row-span-1  border border-white"></div>
@@ -197,7 +197,7 @@ function App() {
 
       {name == "satis" && (
         <div className="App flex justify-center">
-          <div className="  w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
+          <div className="  w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
             <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
               <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
               <div className="col-span-4 row-span-1  border border-white"></div>
@@ -230,7 +230,7 @@ function App() {
       {/* h */}
       {name == "satish" && (
         <div className="App flex justify-center">
-          <div className=" w-[90vw] h-[70vh] md:w-[20vw] md:h-[50vh] p-4">
+          <div className=" w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
             <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
               <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
               <div className="col-span-4 row-span-1 invisible border border-white"></div>
@@ -266,7 +266,7 @@ function App() {
         name="name"
         value={name}
         onChange={onChangeName}
-        className=" p-2  w-full rounded-full mt-10"
+        className=" p-2  w-full rounded-full mt-4"
         placeholder="Enter Satish"
       />
 
