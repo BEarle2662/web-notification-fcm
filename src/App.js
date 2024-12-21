@@ -58,7 +58,7 @@ function App() {
     <div className="p-4 min-h-screen flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
       {/* s */}
       {name == "s" && (
-        <div className="Ap">
+        <div className="flex justify-center">
           <div className="w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
             <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
               <div className="col-span-4 row-span-1 rounded-ss-xl border border-white ">
