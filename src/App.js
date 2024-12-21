@@ -266,7 +266,7 @@ function App() {
         name="name"
         value={name}
         onChange={onChangeName}
-        className=" p-2  w-full rounded-full mt-4"
+        className=" p-2  w-full rounded-full"
         placeholder="Enter Satish"
       />
 
