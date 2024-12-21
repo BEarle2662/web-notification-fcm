@@ -55,7 +55,7 @@ function App() {
     setName(e.target.value.toLowerCase());
   };
   return (
-    <div className="p-4 min-h-screen flex flex-col justify-evenly bg-gradient-to-b from-[#200122]  to-[#6f0000]">
+    <div className="p-4 min-h-screen flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
       {/* s */}
       {name == "s" && (
         <div className="Ap">
@@ -266,7 +266,7 @@ function App() {
         name="name"
         value={name}
         onChange={onChangeName}
-        className=" p-2  w-full rounded-full"
+        className=" p-2  w-full rounded-full mt-10"
         placeholder="Enter Satish"
       />
 
