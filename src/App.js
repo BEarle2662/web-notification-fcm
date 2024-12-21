@@ -55,7 +55,7 @@ function App() {
     setName(e.target.value.toLowerCase());
   };
   return (
-    <div className="p-4 h-screen flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
+    <div className="p-4 h-[100vh] flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
       {/* s */}
       {name == "s" && (
         <div className="flex justify-center">
