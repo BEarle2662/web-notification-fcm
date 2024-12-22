@@ -79,7 +79,7 @@ function App() {
   };
   return (
     <>
-      <div className="p-4 h-[94vh] flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
+      <div className="p-4 min-h-[90vh] flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
         {fullName.map((each, i) => (
           <div key={i}>
             {/* s */}
