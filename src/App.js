@@ -1,11 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { Children, useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { generateToken, messaging } from "./notifications/firebase";
 import { onMessage } from "firebase/messaging";
 import toast, { Toaster } from "react-hot-toast";
+import { motion } from "framer-motion";
+
+const BounceAnimationDiv = ({ children }) => {
+  return (
+    <motion.div
+      className="flex justify-center mt-5"
+      initial={{ opacity: 0, scale: 0.8, y: 50 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      exit={{ opacity: 0, scale: 0.8, y: 50 }}
+      transition={{
+        type: "spring",
+        stiffness: 200,
+        damping: 20,
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 function App() {
+  const [name, setName] = useState("");
+
+  const [fullName, setFullName] = useState([]);
+
   useEffect(() => {
     generateToken();
     onMessage(messaging, (payload) => {
@@ -47,220 +70,192 @@ function App() {
         </div>
       ));
     });
-  }, []);
 
-  const [name, setName] = useState("");
+    setFullName(Array.from(name));
+  }, [name]);
 
   const onChangeName = (e) => {
     setName(e.target.value.toLowerCase());
   };
   return (
-    <div className="p-4 h-[90vh] flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
-      {/* s */}
-      {name == "s" && (
-        <div className="flex justify-center">
-          <div className="w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
-            <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-              <div className="col-span-4 row-span-1 rounded-ss-xl border border-white ">
-                <img
-                  src="/assets/s1.jpeg"
-                  className="object-cover object-center  rounded-ss-xl  h-full w-full"
-                />
-              </div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
+    <>
+      <div className="p-4 h-[94vh] flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
+        {fullName.map((each, i) => (
+          <div key={i}>
+            {/* s */}
+            {each == "s" && (
+              <BounceAnimationDiv>
+                <div className="w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
+                  <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
+                    <div className="col-span-4 row-span-1 rounded-ss-xl border border-white ">
+                      <img
+                        src="/assets/s1.jpeg"
+                        className="object-cover object-center  rounded-ss-xl  h-full w-full"
+                      />
+                    </div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
 
-              <div className="col-span-4 row-span-1 rounded-e-lg border border-white"></div>
+                    <div className="col-span-4 row-span-1 rounded-e-lg border border-white"></div>
 
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+                    <div className="col-span-4 row-span-1 border border-white "></div>
+                    <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
-              <div className="col-span-4 row-span-1 rounded-es-xl border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
+                    <div className="col-span-4 row-span-1 rounded-es-xl border border-white "></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
 
-              <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                    <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1  border rounded-s-lg border-white"></div>
+                    <div className="col-span-4 row-span-1 border border-white "></div>
+                    <div className="col-span-4 row-span-1  border rounded-s-lg border-white"></div>
 
-              <div className="col-span-4 row-span-1 border border-white"></div>
-              <div className="col-span-4 row-span-1 border rounded-ee-xl border-white"></div>
-            </div>
+                    <div className="col-span-4 row-span-1 border border-white"></div>
+                    <div className="col-span-4 row-span-1 border rounded-ee-xl border-white"></div>
+                  </div>
+                </div>
+              </BounceAnimationDiv>
+            )}
+
+            {/* a */}
+            {each == "a" && (
+              <BounceAnimationDiv>
+                <div className="  w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
+                  <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
+                    <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white "></div>
+                    <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white "></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white"></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white "></div>
+                    <div className="col-span-4 row-span-1 rounded-b-xl  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                    <div className="col-span-4 row-span-1 rounded-b-xl border border-white"></div>
+                  </div>
+                </div>
+              </BounceAnimationDiv>
+            )}
+
+            {/* t */}
+            {each == "t" && (
+              <BounceAnimationDiv>
+                <div className="w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
+                  <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
+                    <div className="col-span-4 row-span-1 border rounded-s-xl border-white "></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white rounded-e-xl"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white "></div>
+                    <div className="col-span-4 row-span-1   border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white "></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                    <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1   border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white "></div>
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                  </div>
+                </div>
+              </BounceAnimationDiv>
+            )}
+
+            {/* i */}
+            {each == "i" && (
+              <BounceAnimationDiv>
+                <div className=" w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
+                  <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
+                    <div className="col-span-4 row-span-1 rounded-s-xl border border-white "></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 rounded-e-xl border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white "></div>
+                    <div className="col-span-4 row-span-1   border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white "></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                    <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1   border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white "></div>
+                    <div className="col-span-4 row-span-1 rounded-s-xl border border-white"></div>
+
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+                    <div className="col-span-4 row-span-1 rounded-e-xl  border border-white"></div>
+                  </div>
+                </div>
+              </BounceAnimationDiv>
+            )}
+
+            {/* h */}
+            {each == "h" && (
+              <BounceAnimationDiv>
+                <div className=" w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
+                  <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
+                    <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white "></div>
+                    <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white "></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white"></div>
+                    <div className="col-span-4 row-span-1  border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 border border-white "></div>
+                    <div className="col-span-4 row-span-1 rounded-es-xl   border border-white"></div>
+
+                    <div className="col-span-4 row-span-1 invisible border border-white"></div>
+                    <div className="col-span-4 row-span-1 rounded-ee-xl border border-white"></div>
+                  </div>
+                </div>
+              </BounceAnimationDiv>
+            )}
           </div>
-        </div>
-      )}
+        ))}
 
-      {/* a */}
-      {name == "sa" && (
-        <div className="flex justify-center mt-5">
-          <div className="  w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
-            <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-              <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1 invisible  border border-white"></div>
-
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white"></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1 rounded-b-xl  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-              <div className="col-span-4 row-span-1 rounded-b-xl border border-white"></div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* t */}
-      {name == "sat" && (
-        <div className="flex justify-center mt-5">
-          <div className="w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
-            <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-              <div className="col-span-4 row-span-1 border rounded-s-xl border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white rounded-e-xl"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white "></div>
-              <div className="col-span-4 row-span-1   border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-              <div className="col-span-4 row-span-1 invisible  border border-white"></div>
-
-              <div className="col-span-4 row-span-1   border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white "></div>
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-
-              <div className="col-span-4 row-span-1  border border-white"></div>
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* i */}
-      {name == "sati" && (
-        <div className="flex justify-center mt-5">
-          <div className=" w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
-            <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-              <div className="col-span-4 row-span-1 rounded-s-xl border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 rounded-e-xl border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white "></div>
-              <div className="col-span-4 row-span-1   border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-              <div className="col-span-4 row-span-1 invisible  border border-white"></div>
-
-              <div className="col-span-4 row-span-1   border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white "></div>
-              <div className="col-span-4 row-span-1 rounded-s-xl border border-white"></div>
-
-              <div className="col-span-4 row-span-1  border border-white"></div>
-              <div className="col-span-4 row-span-1 rounded-e-xl  border border-white"></div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* s */}
-
-      {name == "satis" && (
-        <div className="App flex justify-center">
-          <div className="  w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
-            <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-              <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 rounded-e-lg border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1 invisible  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-
-              <div className="col-span-4 row-span-1 rounded-es-xl border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1  border rounded-s-lg border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white"></div>
-              <div className="col-span-4 row-span-1 border rounded-ee-xl border-white"></div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* h */}
-      {name == "satish" && (
-        <div className="App flex justify-center">
-          <div className=" w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
-            <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-              <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-
-              <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1 invisible  border border-white"></div>
-
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white"></div>
-              <div className="col-span-4 row-span-1  border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-
-              <div className="col-span-4 row-span-1 border border-white "></div>
-              <div className="col-span-4 row-span-1 rounded-es-xl   border border-white"></div>
-
-              <div className="col-span-4 row-span-1 invisible border border-white"></div>
-              <div className="col-span-4 row-span-1 rounded-ee-xl border border-white"></div>
-            </div>
-          </div>
-        </div>
-      )}
-      <Toaster position="bottom-center" />
-
+        <Toaster position="bottom-center" />
+      </div>
       <input
         type="text"
         name="name"
@@ -269,9 +264,7 @@ function App() {
         className=" p-2  w-full rounded-full"
         placeholder="Enter Satish"
       />
-
-      {/* <button>Click Me</button> */}
-    </div>
+    </>
   );
 }
 
