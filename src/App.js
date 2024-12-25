@@ -11,7 +11,7 @@ import ThreeD from "./ThreeD";
 const BounceAnimationDiv = ({ children }) => {
   return (
     <motion.div
-      className="flex justify-center mt-5 border border-white"
+      className="flex justify-center mt-5"
       initial={{ opacity: 0, scale: 0.8, y: 50 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       exit={{ opacity: 0, scale: 0.8, y: 50 }}
@@ -114,26 +114,56 @@ function App() {
                         </div>
                         <div className="col-span-4 row-span-1  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 rounded-e-lg border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-e-lg border border-white">
+                          <img
+                            src="/assets/s9.jpeg"
+                            className="object-cover object-center  rounded-e-lg  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 border border-white "></div>
-                        <div className="col-span-4 row-span-1 invisible  border border-white"></div>
+                        <div className="col-span-4 row-span-1 invisible  border border-white">
+                          <img
+                            src="/assets/s3.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 rounded-es-xl border border-white "></div>
+                        <div className="col-span-4 row-span-1 rounded-es-xl border border-white ">
+                          <img
+                            src="/assets/s4.jpeg"
+                            className="object-cover object-center  rounded-es-xl  h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-se-xl border border-white">
+                          <img
+                            src="/assets/s5.jpeg"
+                            className="object-cover object-center  rounded-se-xl  h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
                         <div className="col-span-4 row-span-1 border border-white "></div>
-                        <div className="col-span-4 row-span-1  border rounded-s-lg border-white"></div>
+                        <div className="col-span-4 row-span-1  border rounded-s-lg border-white">
+                          <img
+                            src="/assets/s7.jpeg"
+                            className="object-cover object-center  rounded-s-lg  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 border border-white"></div>
-                        <div className="col-span-4 row-span-1 border rounded-ee-xl border-white"></div>
+                        <div className="col-span-4 row-span-1 border rounded-ee-xl border-white">
+                          <img
+                            src="/assets/s8.jpeg"
+                            className="object-cover object-center  rounded-ee-xl  h-full w-full"
+                          />
+                        </div>
                       </div>
                     </div>
                   </BounceAnimationDiv>
@@ -144,29 +174,64 @@ function App() {
                   <BounceAnimationDiv>
                     <div className="  w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
                       <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-                        <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
+                        <div className="col-span-4 row-span-1 rounded-ss-xl border border-white ">
+                          <img
+                            src="/assets/s10.jpeg"
+                            className="object-cover object-center  rounded-ss-xl  h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-se-xl border border-white">
+                          <img
+                            src="/assets/s11.jpeg"
+                            className="object-cover object-center  rounded-se-xl  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 border border-white "></div>
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          {/* <img
+                            src="/assets/s6.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          /> */}
+                        </div>
 
                         <div className="col-span-4 row-span-1 border border-white "></div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s12.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 border border-white"></div>
                         <div className="col-span-4 row-span-1  border border-white"></div>
 
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 border border-white "></div>
-                        <div className="col-span-4 row-span-1 rounded-b-xl  border border-white"></div>
+                        <div className="col-span-4 row-span-1 border border-white ">
+                          {/* <img
+                            src="/assets/s14.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          /> */}
+                        </div>
+                        <div className="col-span-4 row-span-1 rounded-b-xl  border border-white">
+                          <img
+                            src="/assets/s13.jpeg"
+                            className="object-cover object-center  rounded-b-xl  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
-                        <div className="col-span-4 row-span-1 rounded-b-xl border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-b-xl border border-white">
+                          <img
+                            src="/assets/s15.jpeg"
+                            className="object-cover object-center rounded-b-xl   h-full w-full"
+                          />
+                        </div>
                       </div>
                     </div>
                   </BounceAnimationDiv>
@@ -177,10 +242,20 @@ function App() {
                   <BounceAnimationDiv>
                     <div className="w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
                       <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-                        <div className="col-span-4 row-span-1 border rounded-s-xl border-white "></div>
+                        <div className="col-span-4 row-span-1 border rounded-s-xl border-white ">
+                          <img
+                            src="/assets/s16.jpeg"
+                            className="object-cover object-center rounded-s-xl   h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 border border-white rounded-e-xl"></div>
+                        <div className="col-span-4 row-span-1 border border-white rounded-e-xl">
+                          <img
+                            src="/assets/s17.jpeg"
+                            className="object-cover object-center rounded-e-xl   h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
                         <div className="col-span-4 row-span-1   border border-white"></div>
@@ -188,7 +263,12 @@ function App() {
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s19.jpeg"
+                            className="object-cover object-center rounded-b-xl   h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
@@ -198,7 +278,12 @@ function App() {
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s6.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
                       </div>
                     </div>
@@ -210,13 +295,28 @@ function App() {
                   <BounceAnimationDiv>
                     <div className=" w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
                       <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-                        <div className="col-span-4 row-span-1 rounded-s-xl border border-white "></div>
+                        <div className="col-span-4 row-span-1 rounded-s-xl border border-white ">
+                          <img
+                            src="/assets/s18.jpeg"
+                            className="object-cover object-center  rounded-s-xl  h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 rounded-e-xl border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-e-xl border border-white">
+                          <img
+                            src="/assets/s1.jpeg"
+                            className="object-cover object-center rounded-e-xl   h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
-                        <div className="col-span-4 row-span-1   border border-white"></div>
+                        <div className="col-span-4 row-span-1   border border-white">
+                          <img
+                            src="/assets/s22.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
@@ -226,13 +326,28 @@ function App() {
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1   border border-white"></div>
+                        <div className="col-span-4 row-span-1   border border-white">
+                          <img
+                            src="/assets/s1.jpeg"
+                            className="object-cover object-center  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
-                        <div className="col-span-4 row-span-1 rounded-s-xl border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-s-xl border border-white">
+                          <img
+                            src="/assets/s7.jpeg"
+                            className="object-cover object-center rounded-b-xl   h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1  border border-white"></div>
-                        <div className="col-span-4 row-span-1 rounded-e-xl  border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-e-xl  border border-white">
+                          <img
+                            src="/assets/s9.jpeg"
+                            className="object-cover object-center rounded-e-xl   h-full w-full"
+                          />
+                        </div>
                       </div>
                     </div>
                   </BounceAnimationDiv>
@@ -287,7 +402,7 @@ function App() {
       />
 
       {comName == "satish" && (
-        <div className="h-screen w-screen">
+        <div className="h-screen w-screen bg-[#000]">
           {/* <div className="birthday-text">Happy Birthday</div>
             <div className="grid grid-cols-6">
              s 
