@@ -287,7 +287,7 @@ function App() {
       />
 
       {comName == "satish" && (
-        <div className="h-screen">
+        <div className="h-screen w-screen">
           {/* <div className="birthday-text">Happy Birthday</div>
             <div className="grid grid-cols-6">
              s 
