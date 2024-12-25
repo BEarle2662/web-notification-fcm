@@ -97,6 +97,15 @@ function App() {
   return (
     <>
       <div className="p-4 min-h-screen overflow-y-auto  flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
+        <div className="text-center p-6 bg-white bg-opacity-10 rounded-lg shadow-lg max-w-md">
+          <p className="text-lg text-gray-200 font-light mb-4">
+            Kindha white box lo nee peru type cheyra... Spelling Thelusu
+            GA.......
+          </p>
+          <h6 className="text-3xl font-bold text-white tracking-widest">
+            SATISH
+          </h6>
+        </div>
         {name && (
           <>
             {fullName.map((each, i) => (
