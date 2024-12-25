@@ -97,15 +97,17 @@ function App() {
   return (
     <>
       <div className="p-4 min-h-screen overflow-y-auto  flex flex-col justify-end bg-gradient-to-b from-[#200122]  to-[#6f0000]">
-        <div className="text-center p-6 bg-white bg-opacity-10 rounded-lg shadow-lg max-w-md">
-          <p className="text-lg text-gray-200 font-light mb-4">
-            Kindha white box lo nee peru type cheyra... Spelling Thelusu
-            GA.......
-          </p>
-          <h6 className="text-3xl font-bold text-white tracking-widest">
-            SATISH
-          </h6>
-        </div>
+        {!name && (
+          <div className="text-center p-6 bg-white bg-opacity-10 rounded-lg shadow-lg max-w-md">
+            <p className="text-lg text-gray-200 font-light mb-4">
+              Kindha white box lo nee peru type cheyra... Spelling Thelusu
+              GA.......
+            </p>
+            <h6 className="text-3xl font-bold text-white tracking-widest">
+              SATISH
+            </h6>
+          </div>
+        )}
         {name && (
           <>
             {fullName.map((each, i) => (
@@ -121,7 +123,12 @@ function App() {
                             className="object-cover object-center  rounded-ss-xl  h-full w-full"
                           />
                         </div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s7.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 rounded-e-lg border border-white">
                           <img
@@ -130,27 +137,32 @@ function App() {
                           />
                         </div>
 
-                        <div className="col-span-4 row-span-1 border border-white "></div>
-                        <div className="col-span-4 row-span-1 invisible  border border-white">
+                        <div className="col-span-4 row-span-1 border border-white">
                           <img
-                            src="/assets/s3.jpeg"
-                            className="object-cover object-center    h-full w-full"
+                            src="/assets/s13.jpeg"
+                            className="object-cover object-center  rounded-e-lg  h-full w-full"
                           />
                         </div>
+                        <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
                         <div className="col-span-4 row-span-1 rounded-es-xl border border-white ">
                           <img
-                            src="/assets/s4.jpeg"
+                            src="/assets/s5.jpeg"
                             className="object-cover object-center  rounded-es-xl  h-full w-full"
                           />
                         </div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s16.jpeg"
+                            className="object-cover object-center  rounded-e-lg  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 rounded-se-xl border border-white">
                           <img
-                            src="/assets/s5.jpeg"
+                            src="/assets/s15.jpeg"
                             className="object-cover object-center  rounded-se-xl  h-full w-full"
                           />
                         </div>
@@ -158,7 +170,12 @@ function App() {
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 border border-white "></div>
+                        <div className="col-span-4 row-span-1 border border-white">
+                          <img
+                            src="/assets/s5.jpeg"
+                            className="object-cover object-center  rounded-e-lg  h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1  border rounded-s-lg border-white">
                           <img
                             src="/assets/s7.jpeg"
@@ -166,7 +183,12 @@ function App() {
                           />
                         </div>
 
-                        <div className="col-span-4 row-span-1 border border-white"></div>
+                        <div className="col-span-4 row-span-1 border border-white">
+                          <img
+                            src="/assets/s1.jpeg"
+                            className="object-cover object-center  rounded-e-lg  h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1 border rounded-ee-xl border-white">
                           <img
                             src="/assets/s8.jpeg"
@@ -185,51 +207,76 @@ function App() {
                       <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
                         <div className="col-span-4 row-span-1 rounded-ss-xl border border-white ">
                           <img
-                            src="/assets/s10.jpeg"
+                            src="/assets/s1.jpeg"
                             className="object-cover object-center  rounded-ss-xl  h-full w-full"
                           />
                         </div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s6.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 rounded-se-xl border border-white">
                           <img
-                            src="/assets/s11.jpeg"
+                            src="/assets/s20.jpeg"
                             className="object-cover object-center  rounded-se-xl  h-full w-full"
                           />
                         </div>
 
-                        <div className="col-span-4 row-span-1 border border-white "></div>
+                        <div className="col-span-4 row-span-1 border border-white ">
+                          <img
+                            src="/assets/s8.jpeg"
+                            className="object-cover object-center  rounded-ss-xl  h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
                         <div className="col-span-4 row-span-1  border border-white">
-                          {/* <img
-                            src="/assets/s6.jpeg"
-                            className="object-cover object-center    h-full w-full"
-                          /> */}
-                        </div>
-
-                        <div className="col-span-4 row-span-1 border border-white "></div>
-                        <div className="col-span-4 row-span-1  border border-white">
                           <img
-                            src="/assets/s12.jpeg"
+                            src="/assets/s5.jpeg"
                             className="object-cover object-center    h-full w-full"
                           />
                         </div>
 
-                        <div className="col-span-4 row-span-1 border border-white"></div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1 border border-white ">
+                          <img
+                            src="/assets/s6.jpeg"
+                            className="object-cover object-center  rounded-ss-xl  h-full w-full"
+                          />
+                        </div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s7.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
+
+                        <div className="col-span-4 row-span-1 border border-white">
+                          <img
+                            src="/assets/s8.jpeg"
+                            className="object-cover object-center  rounded-ss-xl  h-full w-full"
+                          />
+                        </div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s9.jpeg"
+                            className="object-cover object-center   h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
                         <div className="col-span-4 row-span-1 border border-white ">
-                          {/* <img
-                            src="/assets/s14.jpeg"
+                          <img
+                            src="/assets/s10.jpeg"
                             className="object-cover object-center    h-full w-full"
-                          /> */}
+                          />
                         </div>
                         <div className="col-span-4 row-span-1 rounded-b-xl  border border-white">
                           <img
-                            src="/assets/s13.jpeg"
+                            src="/assets/s17.jpeg"
                             className="object-cover object-center  rounded-b-xl  h-full w-full"
                           />
                         </div>
@@ -237,7 +284,7 @@ function App() {
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
                         <div className="col-span-4 row-span-1 rounded-b-xl border border-white">
                           <img
-                            src="/assets/s15.jpeg"
+                            src="/assets/s13.jpeg"
                             className="object-cover object-center rounded-b-xl   h-full w-full"
                           />
                         </div>
@@ -253,11 +300,16 @@ function App() {
                       <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
                         <div className="col-span-4 row-span-1 border rounded-s-xl border-white ">
                           <img
-                            src="/assets/s16.jpeg"
+                            src="/assets/s20.jpeg"
                             className="object-cover object-center rounded-s-xl   h-full w-full"
                           />
                         </div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s8.jpeg"
+                            className="object-cover object-center   h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 border border-white rounded-e-xl">
                           <img
@@ -267,14 +319,19 @@ function App() {
                         </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
-                        <div className="col-span-4 row-span-1   border border-white"></div>
+                        <div className="col-span-4 row-span-1   border border-white">
+                          <img
+                            src="/assets/s9.jpeg"
+                            className="object-cover object-center  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
                         <div className="col-span-4 row-span-1  border border-white">
                           <img
-                            src="/assets/s19.jpeg"
+                            src="/assets/s7.jpeg"
                             className="object-cover object-center rounded-b-xl   h-full w-full"
                           />
                         </div>
@@ -282,7 +339,12 @@ function App() {
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1   border border-white"></div>
+                        <div className="col-span-4 row-span-1   border border-white">
+                          <img
+                            src="/assets/s1.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
@@ -310,7 +372,12 @@ function App() {
                             className="object-cover object-center  rounded-s-xl  h-full w-full"
                           />
                         </div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s5.jpeg"
+                            className="object-cover object-center  rounded-s-xl  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 rounded-e-xl border border-white">
                           <img
@@ -330,7 +397,12 @@ function App() {
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white "></div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s18.jpeg"
+                            className="object-cover object-center  rounded-s-xl  h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
@@ -350,7 +422,12 @@ function App() {
                           />
                         </div>
 
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s8.jpeg"
+                            className="object-cover object-center  rounded-s-xl  h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1 rounded-e-xl  border border-white">
                           <img
                             src="/assets/s9.jpeg"
