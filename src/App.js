@@ -275,9 +275,20 @@ function App() {
           </>
         )}
 
-        {comName == "satish" && (
-          <div className="h-screen">
-            {/* <div className="birthday-text">Happy Birthday</div>
+        <Toaster position="bottom-center" />
+      </div>
+      <input
+        type="text"
+        name="name"
+        value={name}
+        onChange={onChangeName}
+        className=" p-2  w-full rounded-full"
+        placeholder="Enter Satish"
+      />
+
+      {comName == "satish" && (
+        <div className="h-screen">
+          {/* <div className="birthday-text">Happy Birthday</div>
             <div className="grid grid-cols-6">
              s 
 
@@ -481,19 +492,9 @@ function App() {
                 </div>
               </BounceAnimationDiv>
             </div> */}
-            <ThreeD />
-          </div>
-        )}
-        <Toaster position="bottom-center" />
-      </div>
-      <input
-        type="text"
-        name="name"
-        value={name}
-        onChange={onChangeName}
-        className=" p-2  w-full rounded-full"
-        placeholder="Enter Satish"
-      />
+          <ThreeD />
+        </div>
+      )}
     </>
   );
 }
