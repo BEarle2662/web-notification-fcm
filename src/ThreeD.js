@@ -14,9 +14,9 @@ import { useEffect, useState } from "react";
 const ThreeD = () => {
   const { ...config } = {
     backside: true,
-    backsideThickness: 0.3,
+    backsideThickness: 0.5,
     transmission: 1,
-    thickness: 0.2,
+    thickness: 0.3,
     chromaticAbbereation: 5,
     ior: 1.5,
     color: "#9b81de",
