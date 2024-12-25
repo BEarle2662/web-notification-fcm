@@ -23,7 +23,7 @@ const ThreeD = () => {
     <Canvas camera={{ position: [0, 0, 6] }}>
       <Float speed={2} rotationIntensity={1}>
         <Text config={config} position={[0, -1.5, 0]}>
-          TWD
+          SimhaChalam
         </Text>
 
         <Stars count={400} speed={5} saturation={0} />
