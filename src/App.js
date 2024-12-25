@@ -7,6 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { motion } from "framer-motion";
 import "./App.css";
 import ThreeD from "./ThreeD";
+import LottieCom from "./LottieCom";
 
 const BounceAnimationDiv = ({ children }) => {
   return (
@@ -74,7 +75,7 @@ function App() {
       ));
     });
 
-    if (name != "satish") {
+    if (name != "satish ") {
       setFullName(Array.from(name));
     } else {
       setComName(name);
@@ -444,29 +445,84 @@ function App() {
                   <BounceAnimationDiv>
                     <div className=" w-[60vw] h-[40vh] md:w-[20vw] md:h-[50vh] p-4">
                       <div className="grid grid-cols-12 grid-rows-5 h-full w-full  gap-2">
-                        <div className="col-span-4 row-span-1 rounded-ss-xl border border-white "></div>
+                        <div className="col-span-4 row-span-1 rounded-ss-xl border border-white ">
+                          <img
+                            src="/assets/s5.jpeg"
+                            className="object-cover object-center rounded-ss-xl   h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 rounded-se-xl border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-se-xl border border-white">
+                          <img
+                            src="/assets/s9.jpeg"
+                            className="object-cover object-center rounded-se-xl   h-full w-full"
+                          />
+                        </div>
 
-                        <div className="col-span-4 row-span-1 border border-white "></div>
+                        <div className="col-span-4 row-span-1 border border-white ">
+                          <img
+                            src="/assets/s1.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
                         <div className="col-span-4 row-span-1 invisible  border border-white"></div>
 
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s20.jpeg"
+                            className="object-cover object-center   h-full w-full"
+                          />
+                        </div>
 
-                        <div className="col-span-4 row-span-1 border border-white "></div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1 border border-white ">
+                          <img
+                            src="/assets/s17.jpeg"
+                            className="object-cover object-center   h-full w-full"
+                          />
+                        </div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s20.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
 
-                        <div className="col-span-4 row-span-1 border border-white"></div>
-                        <div className="col-span-4 row-span-1  border border-white"></div>
+                        <div className="col-span-4 row-span-1 border border-white">
+                          <img
+                            src="/assets/s22.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
+                        <div className="col-span-4 row-span-1  border border-white">
+                          <img
+                            src="/assets/s7.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
 
-                        <div className="col-span-4 row-span-1 border border-white "></div>
-                        <div className="col-span-4 row-span-1 rounded-es-xl   border border-white"></div>
+                        <div className="col-span-4 row-span-1 border border-white ">
+                          <img
+                            src="/assets/s9.jpeg"
+                            className="object-cover object-center    h-full w-full"
+                          />
+                        </div>
+                        <div className="col-span-4 row-span-1 rounded-es-xl   border border-white">
+                          <img
+                            src="/assets/s8.jpeg"
+                            className="object-cover object-center rounded-es-xl   h-full w-full"
+                          />
+                        </div>
 
                         <div className="col-span-4 row-span-1 invisible border border-white"></div>
-                        <div className="col-span-4 row-span-1 rounded-ee-xl border border-white"></div>
+                        <div className="col-span-4 row-span-1 rounded-ee-xl border border-white">
+                          <img
+                            src="/assets/s16.jpeg"
+                            className="object-cover object-center rounded-ee-xl   h-full w-full"
+                          />
+                        </div>
                       </div>
                     </div>
                   </BounceAnimationDiv>
@@ -487,7 +543,7 @@ function App() {
         placeholder="Enter Satish"
       />
 
-      {comName == "satish" && (
+      {comName == "satish " && (
         <div className="h-screen w-screen bg-[#000]">
           {/* <div className="birthday-text">Happy Birthday</div>
             <div className="grid grid-cols-6">
@@ -693,7 +749,8 @@ function App() {
                 </div>
               </BounceAnimationDiv>
             </div> */}
-          <ThreeD />
+          {/* <ThreeD /> */}
+          <LottieCom />
         </div>
       )}
     </>
