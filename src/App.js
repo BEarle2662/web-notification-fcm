@@ -749,8 +749,8 @@ function App() {
                 </div>
               </BounceAnimationDiv>
             </div> */}
-          <ThreeD />
-          {/* <LottieCom /> */}
+          {/* <ThreeD /> */}
+          <LottieCom />
         </div>
       )}
     </>
